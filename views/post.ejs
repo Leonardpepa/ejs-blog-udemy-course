@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+<h1><%= title %></h1>
+<p><%= content %></p>
+<% if (username === loggedUser.username) { %>
+  <form action="/delete/<%=id%>" method="post">
+    <button type="submit" class="btn btn-danger btn-sm" value="delete">
+      Delete
+    </button>
+  </form>
+<% } %> 
+  <p>Creted by <%=username%></p>
+<%- include("partials/footer") -%>

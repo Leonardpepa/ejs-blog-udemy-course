@@ -1,0 +1,9 @@
+<%- include("partials/header") -%> 
+<form class="container" action="/search" method="POST">
+    <div class="mb-3">
+        <label for="searchEmail" class="form-label">Email address</label>
+        <input type="email" name="email" class="form-control" id="searchEmail" placeholder="name@example.com">
+        <input type="submit" value="search">
+    </div>
+</form>
+<%- include("partials/footer") -%>
